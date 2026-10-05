@@ -11,7 +11,7 @@ import "../styles/catalogo.css";
 function Catalogo() {
   const produtos = [
     {
-      imagem: "https://cdn.jsdelivr.net/gh/moreira20077/hypertech@main/images/examples/1-pc.png",
+      imagem: "/images/examples/1-pc.png",
       nome: "Computador PC Gamer Completo Tob Intel Core I7 SSD480GB 16gb...",
     },
     {
@@ -90,66 +90,115 @@ function Catalogo() {
 
         <div className="product-type">
 
-          <div className="icon-box">
+          <a href="#pecas" className="icon-box">
             <img
               src="/images/icons/hardware.png"
               alt="Peças"
               className="product-icon"
             />
             <span>Peças</span>
-          </div>
+          </a>
 
-          <div className="icon-box">
+          <a href="#perifericos" className="icon-box">
             <img
               src="/images/icons/mouse.png"
               alt="Periféricos"
               className="product-icon"
             />
             <span>Periféricos</span>
-          </div>
+          </a>
 
-          <div className="icon-box">
+          <a href="#computadores" className="icon-box">
             <img
               src="/images/icons/pc.png"
               alt="Computadores"
               className="product-icon"
             />
             <span>Computadores</span>
-          </div>
+          </a>
 
-          <div className="icon-box">
+          <a href="#games" className="icon-box">
             <img
               src="/images/icons/controle.png"
               alt="Games"
               className="product-icon"
             />
             <span>Games</span>
-          </div>
+          </a>
 
-          <div className="icon-box">
+          <a href="#smartphones" className="icon-box">
             <img
               src="/images/icons/celular.png"
               alt="Smartphones"
               className="product-icon"
             />
             <span>Smartphones</span>
-          </div>
+          </a>
 
-          <div className="icon-box">
+          <a href="#monte-pc" className="icon-box">
             <img
               src="/images/icons/ferramenta.png"
               alt="Monte seu PC"
               className="product-icon"
             />
             <span>Monte seu PC</span>
-          </div>
+          </a>
 
         </div>
 
 
         {/* COMPUTADORES */}
+        <section id="pecas">
+          <h2 className="product-title">
+            Peças
+          </h2>
 
-        <h2 className="product-title">
+          <p>
+            Confira nossas peças para montar ou atualizar seu computador.
+          </p>
+
+        </section>
+        <section id="perifericos">
+          <h2 className="product-title">
+            Periféricos
+          </h2>
+
+          <p>
+            Encontre mouses, teclados, headsets e outros periféricos.
+          </p>
+
+          <section id="games">
+            <h2 className="product-title">
+              Games
+            </h2>
+
+            <p>
+              Confira controles, acessórios e produtos para seus jogos.
+            </p>
+
+          </section>
+          <section id="smartphones">
+            <h2 className="product-title">
+              Smartphones
+            </h2>
+
+            <p>
+              Encontre smartphones e acessórios para o seu dia a dia.
+            </p>
+
+          </section>
+          <section id="monte-pc">
+            <h2 className="product-title">
+              Monte seu PC
+            </h2>
+
+            <p>
+              Monte seu computador escolhendo as peças que você precisa.
+            </p>
+
+          </section>
+        </section>
+        <h2 id="computadores" className="product-title">
           Computadores
         </h2>
 
@@ -162,6 +211,7 @@ function Catalogo() {
             spaceBetween={30}
             loop={true}
             navigation={true}
+            preventClicks={false}
           >
 
             {produtos.map((produto, index) => (
@@ -178,11 +228,11 @@ function Catalogo() {
                     Frete Grátis*
                   </p>
 
-                  <Link to="/produto">
+                  <a href="/produto">
                     <p className="nome-produto">
                       {produto.nome}
                     </p>
-                  </Link>
+                  </a>
 
                   <p className="preco-antigo">
                     R$2.124,06
@@ -229,12 +279,9 @@ function Catalogo() {
                     Frete Grátis*
                   </p>
 
-                  <Link to="/produto">
-                    <p className="nome-produto">
-                      {produto.nome}
-                    </p>
-                  </Link>
-
+                  <a href="/produto">
+                    <p className="nome-produto">{produto.nome}</p>
+                  </a>
                   <p className="preco-antigo">
                     R$2.124,06
                   </p>
