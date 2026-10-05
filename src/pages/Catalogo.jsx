@@ -9,9 +9,9 @@ import Header from "../components/Header";
 import "../styles/catalogo.css";
 
 function Catalogo() {
-  const produtos = [
+  const produtosComputadores = [
     {
-      imagem: "https://cdn.jsdelivr.net/gh/moreira20077/hypertech@main/images/examples/1-pc.png",
+      imagem: "/images/examples/1-pc.png",
       nome: "Computador PC Gamer Completo Tob Intel Core I7 SSD480GB 16gb...",
     },
     {
@@ -33,6 +33,7 @@ function Catalogo() {
       <Header />
 
       <main>
+
         {/* CARROSSEL PRINCIPAL */}
 
         <Swiper
@@ -90,66 +91,496 @@ function Catalogo() {
 
         <div className="product-type">
 
-          <div className="icon-box">
+          <a href="#pecas" className="icon-box">
             <img
               src="/images/icons/hardware.png"
               alt="Peças"
               className="product-icon"
             />
             <span>Peças</span>
-          </div>
+          </a>
 
-          <div className="icon-box">
+          <a href="#perifericos" className="icon-box">
             <img
               src="/images/icons/mouse.png"
               alt="Periféricos"
               className="product-icon"
             />
             <span>Periféricos</span>
-          </div>
+          </a>
 
-          <div className="icon-box">
+          <a href="#computadores" className="icon-box">
             <img
               src="/images/icons/pc.png"
               alt="Computadores"
               className="product-icon"
             />
             <span>Computadores</span>
-          </div>
+          </a>
 
-          <div className="icon-box">
+          <a href="#games" className="icon-box">
             <img
               src="/images/icons/controle.png"
               alt="Games"
               className="product-icon"
             />
             <span>Games</span>
-          </div>
+          </a>
 
-          <div className="icon-box">
+          <a href="#smartphones" className="icon-box">
             <img
               src="/images/icons/celular.png"
               alt="Smartphones"
               className="product-icon"
             />
             <span>Smartphones</span>
-          </div>
+          </a>
 
-          <div className="icon-box">
+          <a href="#monte-pc" className="icon-box">
             <img
               src="/images/icons/ferramenta.png"
               alt="Monte seu PC"
               className="product-icon"
             />
             <span>Monte seu PC</span>
-          </div>
+          </a>
 
         </div>
 
 
+        {/* PEÇAS */}
+
+        <section id="pecas">
+
+          <h2 className="product-title">
+            Peças
+          </h2>
+
+          <div className="product-block">
+
+            <Swiper
+              className="computadores-swiper"
+              modules={[Navigation]}
+              slidesPerView={3}
+              spaceBetween={30}
+              loop={true}
+              navigation={true}
+            >
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder1.jpg"
+                    alt="Peças"
+                  />
+
+                  <p className="nome-produto">
+                    Componentes para computador
+                  </p>
+
+                  <p className="preco-atual">
+                    Confira nossos produtos
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder2.jpg"
+                    alt="Peças"
+                  />
+
+                  <p className="nome-produto">
+                    Hardware
+                  </p>
+
+                  <p className="preco-atual">
+                    Confira nossos produtos
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder3.jpg"
+                    alt="Peças"
+                  />
+
+                  <p className="nome-produto">
+                    Componentes Gamer
+                  </p>
+
+                  <p className="preco-atual">
+                    Confira nossos produtos
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+            </Swiper>
+
+          </div>
+
+        </section>
+
+
+        {/* PERIFÉRICOS */}
+
+        <section id="perifericos">
+
+          <h2 className="product-title">
+            Periféricos
+          </h2>
+
+          <div className="product-block">
+
+            <Swiper
+              className="computadores-swiper"
+              modules={[Navigation]}
+              slidesPerView={3}
+              spaceBetween={30}
+              loop={true}
+              navigation={true}
+            >
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder1.jpg"
+                    alt="Mouse"
+                  />
+
+                  <p className="frete">
+                    Frete Grátis*
+                  </p>
+
+                  <p className="nome-produto">
+                    Mouse Gamer
+                  </p>
+
+                  <p className="preco-atual">
+                    R$99,90
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder2.jpg"
+                    alt="Teclado"
+                  />
+
+                  <p className="frete">
+                    Frete Grátis*
+                  </p>
+
+                  <p className="nome-produto">
+                    Teclado Gamer
+                  </p>
+
+                  <p className="preco-atual">
+                    R$149,90
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder3.jpg"
+                    alt="Headset"
+                  />
+
+                  <p className="frete">
+                    Frete Grátis*
+                  </p>
+
+                  <p className="nome-produto">
+                    Headset Gamer
+                  </p>
+
+                  <p className="preco-atual">
+                    R$199,90
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+            </Swiper>
+
+          </div>
+
+        </section>
+
+
+        {/* GAMES */}
+
+        <section id="games">
+
+          <h2 className="product-title">
+            Games
+          </h2>
+
+          <div className="product-block">
+
+            <Swiper
+              className="computadores-swiper"
+              modules={[Navigation]}
+              slidesPerView={3}
+              spaceBetween={30}
+              loop={true}
+              navigation={true}
+            >
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder1.jpg"
+                    alt="Games"
+                  />
+
+                  <p className="nome-produto">
+                    Controle Gamer
+                  </p>
+
+                  <p className="preco-atual">
+                    R$199,90
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder2.jpg"
+                    alt="Games"
+                  />
+
+                  <p className="nome-produto">
+                    Acessórios para Games
+                  </p>
+
+                  <p className="preco-atual">
+                    R$129,90
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder3.jpg"
+                    alt="Games"
+                  />
+
+                  <p className="nome-produto">
+                    Produtos Gamer
+                  </p>
+
+                  <p className="preco-atual">
+                    R$249,90
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+            </Swiper>
+
+          </div>
+
+        </section>
+
+
+        {/* SMARTPHONES */}
+
+        <section id="smartphones">
+
+          <h2 className="product-title">
+            Smartphones
+          </h2>
+
+          <div className="product-block">
+
+            <Swiper
+              className="computadores-swiper"
+              modules={[Navigation]}
+              slidesPerView={3}
+              spaceBetween={30}
+              loop={true}
+              navigation={true}
+            >
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder1.jpg"
+                    alt="Smartphone"
+                  />
+
+                  <p className="nome-produto">
+                    Smartphone
+                  </p>
+
+                  <p className="preco-atual">
+                    R$1.299,90
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder2.jpg"
+                    alt="Smartphone"
+                  />
+
+                  <p className="nome-produto">
+                    Smartphone Gamer
+                  </p>
+
+                  <p className="preco-atual">
+                    R$1.999,90
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder3.jpg"
+                    alt="Smartphone"
+                  />
+
+                  <p className="nome-produto">
+                    Acessórios para celular
+                  </p>
+
+                  <p className="preco-atual">
+                    R$99,90
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+            </Swiper>
+
+          </div>
+
+        </section>
+
+
+        {/* MONTE SEU PC */}
+
+        <section id="monte-pc">
+
+          <h2 className="product-title">
+            Monte seu PC
+          </h2>
+
+          <div className="product-block">
+
+            <Swiper
+              className="computadores-swiper"
+              modules={[Navigation]}
+              slidesPerView={3}
+              spaceBetween={30}
+              loop={true}
+              navigation={true}
+            >
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder1.jpg"
+                    alt="Monte seu PC"
+                  />
+
+                  <p className="nome-produto">
+                    Monte seu PC Gamer
+                  </p>
+
+                  <p className="preco-atual">
+                    Escolha suas peças
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder2.jpg"
+                    alt="Monte seu PC"
+                  />
+
+                  <p className="nome-produto">
+                    PC para trabalho
+                  </p>
+
+                  <p className="preco-atual">
+                    Escolha suas peças
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="card-produto">
+
+                  <img
+                    src="/images/examples/placeholder3.jpg"
+                    alt="Monte seu PC"
+                  />
+
+                  <p className="nome-produto">
+                    PC personalizado
+                  </p>
+
+                  <p className="preco-atual">
+                    Escolha suas peças
+                  </p>
+
+                </div>
+              </SwiperSlide>
+
+            </Swiper>
+
+          </div>
+
+        </section>
+
+
         {/* COMPUTADORES */}
 
-        <h2 className="product-title">
+        <h2
+          id="computadores"
+          className="product-title"
+        >
           Computadores
         </h2>
 
@@ -164,7 +595,7 @@ function Catalogo() {
             navigation={true}
           >
 
-            {produtos.map((produto, index) => (
+            {produtosComputadores.map((produto, index) => (
               <SwiperSlide key={index}>
 
                 <div className="card-produto">
@@ -215,7 +646,7 @@ function Catalogo() {
             navigation={true}
           >
 
-            {produtos.map((produto, index) => (
+            {produtosComputadores.map((produto, index) => (
               <SwiperSlide key={index}>
 
                 <div className="card-produto">
@@ -262,9 +693,12 @@ function Catalogo() {
       {/* RODAPÉ */}
 
       <footer>
+
         <div className="rodape">
 
-          <h1>Contate a gente!</h1>
+          <h1>
+            Contate a gente!
+          </h1>
 
           <p className="textoRodape">
             📱 +55(21)4056-3140
@@ -281,6 +715,7 @@ function Catalogo() {
           </p>
 
         </div>
+
       </footer>
     </>
   );
