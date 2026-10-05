@@ -38,3 +38,20 @@
   .login button:hover {
     background-color: #1557b0;
   }
+  .mensagem-login {
+    margin-top: 20px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .mensagem-login.sucesso {
+    background-color: #1b5e20;
+    color: #ffffff;
+  }
+  
+  .mensagem-login.erro {
+    background-color: #8b1e1e;
+    color: #ffffff;
+  }

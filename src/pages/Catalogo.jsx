@@ -168,11 +168,33 @@ function Catalogo() {
             >
 
               <SwiperSlide>
-                <div className="card-produto">
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Componentes para computador",
+                        imagem: "/images/examples/placeholder1.jpg",
+                        preco: 150.00,
+                      })
+                    );
 
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder1.jpg"
-                    alt="Peças"
+                    alt="Componentes para computador"
                   />
 
                   <p className="nome-produto">
@@ -182,16 +204,37 @@ function Catalogo() {
                   <p className="preco-atual">
                     Confira nossos produtos
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="card-produto">
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Hardware",
+                        imagem: "/images/examples/placeholder2.jpg",
+                        preco: 100.00,
+                      })
+                    );
 
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder2.jpg"
-                    alt="Peças"
+                    alt="Hardware"
                   />
 
                   <p className="nome-produto">
@@ -201,16 +244,37 @@ function Catalogo() {
                   <p className="preco-atual">
                     Confira nossos produtos
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="card-produto">
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Componentes Gamer",
+                        imagem: "/images/examples/placeholder3.jpg",
+                        preco: 150.00,
+                      })
+                    );
 
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder3.jpg"
-                    alt="Peças"
+                    alt="Componentes Gamer"
                   />
 
                   <p className="nome-produto">
@@ -220,8 +284,7 @@ function Catalogo() {
                   <p className="preco-atual">
                     Confira nossos produtos
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
             </Swiper>
@@ -251,11 +314,31 @@ function Catalogo() {
             >
 
               <SwiperSlide>
-                <div className="card-produto">
+                <div
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Mouse Gamer",
+                        imagem: "/images/examples/placeholder1.jpg",
+                        preco: 99.90,
+                      })
+                    );
+
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+
+                    window.location.href = "/carrinho";
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
 
                   <img
                     src="/images/examples/placeholder1.jpg"
-                    alt="Mouse"
+                    alt="Mouse Gamer"
                   />
 
                   <p className="frete">
@@ -274,11 +357,34 @@ function Catalogo() {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="card-produto">
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Teclado Gamer",
+                        imagem: "/images/examples/placeholder2.jpg",
+                        preco: 149.90,
+                      })
+                    );
+
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
 
                   <img
                     src="/images/examples/placeholder2.jpg"
-                    alt="Teclado"
+                    alt="Teclado Gamer"
                   />
 
                   <p className="frete">
@@ -293,15 +399,36 @@ function Catalogo() {
                     R$149,90
                   </p>
 
-                </div>
+                </Link>
               </SwiperSlide>
-
               <SwiperSlide>
-                <div className="card-produto">
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Headset Gamer",
+                        imagem: "/images/examples/placeholder3.jpg",
+                        preco: 199.90,
+                      })
+                    );
 
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder3.jpg"
-                    alt="Headset"
+                    alt="Headset Gamer"
                   />
 
                   <p className="frete">
@@ -315,8 +442,7 @@ function Catalogo() {
                   <p className="preco-atual">
                     R$199,90
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
             </Swiper>
@@ -345,12 +471,36 @@ function Catalogo() {
               navigation={true}
             >
 
-              <SwiperSlide>
-                <div className="card-produto">
+              {/* CONTROLE GAMER */}
 
+              <SwiperSlide>
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Controle Gamer",
+                        imagem: "/images/examples/placeholder1.jpg",
+                        preco: 199.90,
+                      })
+                    );
+
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder1.jpg"
-                    alt="Games"
+                    alt="Controle Gamer"
                   />
 
                   <p className="nome-produto">
@@ -360,46 +510,222 @@ function Catalogo() {
                   <p className="preco-atual">
                     R$199,90
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
-              <SwiperSlide>
-                <div className="card-produto">
 
+              {/* GOD OF WAR RAGNARÖK */}
+
+              <SwiperSlide>
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "God of War Ragnarök",
+                        imagem: "/images/examples/god-of-war.jpg",
+                        preco: 249.90,
+                      })
+                    );
+
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
-                    src="/images/examples/placeholder2.jpg"
-                    alt="Games"
+                    src="/images/examples/god-of-war.jpg"
+                    alt="God of War Ragnarök"
                   />
 
                   <p className="nome-produto">
-                    Acessórios para Games
-                  </p>
-
-                  <p className="preco-atual">
-                    R$129,90
-                  </p>
-
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="card-produto">
-
-                  <img
-                    src="/images/examples/placeholder3.jpg"
-                    alt="Games"
-                  />
-
-                  <p className="nome-produto">
-                    Produtos Gamer
+                    God of War Ragnarök
                   </p>
 
                   <p className="preco-atual">
                     R$249,90
                   </p>
+                </Link>
+              </SwiperSlide>
 
-                </div>
+
+              {/* MINECRAFT */}
+
+              <SwiperSlide>
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Minecraft",
+                        imagem: "/images/examples/minecraft.jpg",
+                        preco: 99.90,
+                      })
+                    );
+
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
+                  <img
+                    src="/images/examples/minecraft.jpg"
+                    alt="Minecraft"
+                  />
+
+                  <p className="nome-produto">
+                    Minecraft
+                  </p>
+
+                  <p className="preco-atual">
+                    R$99,90
+                  </p>
+                </Link>
+              </SwiperSlide>
+
+
+              {/* GTA V */}
+
+              <SwiperSlide>
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Grand Theft Auto V",
+                        imagem: "/images/examples/gta-v.jpg",
+                        preco: 149.90,
+                      })
+                    );
+
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
+                  <img
+                    src="/images/examples/gta-v.jpg"
+                    alt="Grand Theft Auto V"
+                  />
+
+                  <p className="nome-produto">
+                    Grand Theft Auto V
+                  </p>
+
+                  <p className="preco-atual">
+                    R$149,90
+                  </p>
+                </Link>
+              </SwiperSlide>
+
+
+              {/* MARVEL'S SPIDER-MAN 2 */}
+
+              <SwiperSlide>
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Marvel's Spider-Man 2",
+                        imagem: "/images/examples/spider-man-2.jpg",
+                        preco: 249.90,
+                      })
+                    );
+
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
+                  <img
+                    src="/images/examples/spider-man-2.jpg"
+                    alt="Marvel's Spider-Man 2"
+                  />
+
+                  <p className="nome-produto">
+                    Marvel's Spider-Man 2
+                  </p>
+
+                  <p className="preco-atual">
+                    R$249,90
+                  </p>
+                </Link>
+              </SwiperSlide>
+
+
+              {/* RESIDENT EVIL 4 */}
+
+              <SwiperSlide>
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Resident Evil 4",
+                        imagem: "/images/examples/resident-evil-4.jpg",
+                        preco: 199.90,
+                      })
+                    );
+
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
+                  <img
+                    src="/images/examples/resident-evil-4.jpg"
+                    alt="Resident Evil 4"
+                  />
+
+                  <p className="nome-produto">
+                    Resident Evil 4
+                  </p>
+
+                  <p className="preco-atual">
+                    R$199,90
+                  </p>
+                </Link>
               </SwiperSlide>
 
             </Swiper>
@@ -428,9 +754,32 @@ function Catalogo() {
               navigation={true}
             >
 
-              <SwiperSlide>
-                <div className="card-produto">
 
+              <SwiperSlide>
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Smartphone",
+                        imagem: "/images/examples/placeholder1.jpg",
+                        preco: 1299.90,
+                      })
+                    );
+
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder1.jpg"
                     alt="Smartphone"
@@ -443,16 +792,37 @@ function Catalogo() {
                   <p className="preco-atual">
                     R$1.299,90
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="card-produto">
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Smartphone Gamer",
+                        imagem: "/images/examples/placeholder2.jpg",
+                        preco: 1999.90,
+                      })
+                    );
 
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder2.jpg"
-                    alt="Smartphone"
+                    alt="Smartphone Gamer"
                   />
 
                   <p className="nome-produto">
@@ -462,16 +832,37 @@ function Catalogo() {
                   <p className="preco-atual">
                     R$1.999,90
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="card-produto">
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Acessórios para celular",
+                        imagem: "/images/examples/placeholder3.jpg",
+                        preco: 99.90,
+                      })
+                    );
 
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder3.jpg"
-                    alt="Smartphone"
+                    alt="Acessórios para celular"
                   />
 
                   <p className="nome-produto">
@@ -481,8 +872,7 @@ function Catalogo() {
                   <p className="preco-atual">
                     R$99,90
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
             </Swiper>
@@ -512,11 +902,33 @@ function Catalogo() {
             >
 
               <SwiperSlide>
-                <div className="card-produto">
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "Monte seu PC Gamer",
+                        imagem: "/images/examples/placeholder1.jpg",
+                        preco: 0,
+                      })
+                    );
 
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder1.jpg"
-                    alt="Monte seu PC"
+                    alt="Monte seu PC Gamer"
                   />
 
                   <p className="nome-produto">
@@ -526,16 +938,37 @@ function Catalogo() {
                   <p className="preco-atual">
                     Escolha suas peças
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="card-produto">
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "PC para trabalho",
+                        imagem: "/images/examples/placeholder2.jpg",
+                        preco: 0,
+                      })
+                    );
 
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder2.jpg"
-                    alt="Monte seu PC"
+                    alt="PC para trabalho"
                   />
 
                   <p className="nome-produto">
@@ -545,16 +978,37 @@ function Catalogo() {
                   <p className="preco-atual">
                     Escolha suas peças
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="card-produto">
+                <Link
+                  to="/carrinho"
+                  className="card-produto"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "produtoCarrinho",
+                      JSON.stringify({
+                        nome: "PC personalizado",
+                        imagem: "/images/examples/placeholder3.jpg",
+                        preco: 0,
+                      })
+                    );
 
+                    localStorage.setItem(
+                      "quantidadeCarrinho",
+                      "1"
+                    );
+                  }}
+                  style={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                >
                   <img
                     src="/images/examples/placeholder3.jpg"
-                    alt="Monte seu PC"
+                    alt="PC personalizado"
                   />
 
                   <p className="nome-produto">
@@ -564,8 +1018,7 @@ function Catalogo() {
                   <p className="preco-atual">
                     Escolha suas peças
                   </p>
-
-                </div>
+                </Link>
               </SwiperSlide>
 
             </Swiper>
